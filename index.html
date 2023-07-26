@@ -1,62 +1,117 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>JXNKI's Website - KalixYT.github.io</title>
+
     <link rel="stylesheet" href="src/index.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/dd13dde450.js" crossorigin="anonymous"></script>
-    <!-- Stuff -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/dd13dde450.js" crossorigin="anonymous"></script>
-    <!--  -->
+
 </head>
+
 <body>
+
+    <nav class="navbar">
+
+        <button class="nav-button">
+
+            <a href="index.html" class="nav-button">Main Site</a>
+
+        </button>
+
+        <button class="nav-button">
+
+            <a href="submitrblxgamesform.html" class="nav-button">Submit your Roblox Games!</a>
+
+        </button>
+
+    </nav>
+
     <div class="jxnki">
+
         <img id ="avatar">
+
         <span style="align-items:center;"><h1 class="author">JXNKI_YT</h1></span>
+
         <h2 class="skills">Developer / YouTuber / Editor</h2>
+
         <div style="margin-top:30px;">
+
             <div class="socials">
+
                 <i class="fa-brands fa-discord fa-2xl" style="color: #1383c9;"></i>
+
                 <h1 class="title">Discord Username</h1>
+
                 <a style="text-decoration: none"><h1 id="username" class="link">@placeholder</h1></a>
+
             </div>
+
             <div class="socials">
+
                 <a href="https://www.youtube.com/@JXNKI" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #1383c9;"></i></a>
                 <a href="https://www.youtube.com/@JXNKI" target="_blank"><h1 class="title">YouTube Channel</h1></a>
                 <a style="text-decoration: none" href="https://www.youtube.com/@JXNKI" target="_blank"><h1 id="youtube" class="link">@JXNKI</h1></a>
+
             </div>
+
+            <!--
             <div class="socials">
                 <a href="https://www.tiktok.com/@jxnki_yt" target="_blank"><i class="fa-brands fa-tiktok fa-2xl" style="color: #1383c9;"></i></a>
                 <a href="https://www.tiktok.com/@jxnki_yt" target="_blank"><h1 class="title">TikTok Account</h1></a>
                 <a style="text-decoration: none" href="https://www.tiktok.com/@jxnki_yt" target="_blank"><h1 id="youtube" class="link">@jxnki_yt</h1></a>
             </div>
+            -->
+
             <div class="socials">
+
                 <a href="https://kalixyt.itch.io" target="_blank"><i class="fa-brands fa-itch-io fa-2xl" style="color: #1383c9;"></i></a>
                 <a href="https://kalixyt.itch.io" target="_blank"><h1 class="title">itch.io Page</h1></a>
                 <a style="text-decoration: none" href="https://kalixyt.itch.io" target="_blank"><h1 id="youtube" class="link">Kalix YT</h1></a>
+
             </div>
+
             <div class="socials">
+
                 <a href="https://web.roblox.com/users/529702960/profile" target="_blank"><i class="fa-solid fa-gamepad fa-2xl" style="color: #1383c9;"></i></a>
                 <a href="https://web.roblox.com/users/529702960/profile" target="_blank"><h1 class="title">Roblox Account</h1></a>
                 <a style="text-decoration: none" href="https://web.roblox.com/users/529702960/profile" target="_blank"><h1 id="youtube" class="link">@KohenWillLoveRoblox</h1></a>
+
             </div>
+
         </div>
+
     </div>
+
     <h1 style="font-size: 15px;color:#ffffff;">Made with <i style="color:rgb(247, 0, 255);" class="fa-solid fa-heart"></i> by <a style="color:#00aeff;background: url(https://static.cracked.to/images/bg1.gif)">JXNKI</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration: none;color:#00ff00;">Leaked.Wiki API</a></h1>
+
 </body>
+
 <script>
+
     $.getJSON('https://api.leaked.wiki/discorduser?id=1107126931226374284',
+
     function(data) {
+
         document.getElementById("avatar").src = data.avatar;
         document.getElementById("username").innerHTML = "@" + data.username
-    }
-    )
+
+    })
+
 </script>
+
 </html>
