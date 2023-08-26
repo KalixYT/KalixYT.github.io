@@ -57,7 +57,7 @@
 
                 <h1 class="title">Discord Username</h1>
 
-                <a style="text-decoration: none"><h1 id="username" class="link">@placeholder</h1></a>
+                <a style="text-decoration: none"><h1 id="username" class="link">@jxnkiyt</h1></a>
 
             </div>
 
@@ -100,18 +100,5 @@
     <h1 style="font-size: 15px;color:#ffffff;">Made with <i style="color:rgb(247, 0, 255);" class="fa-solid fa-heart"></i> by <a style="color:#00aeff;background: url(https://static.cracked.to/images/bg1.gif)">JXNKI</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration: none;color:#00ff00;">Leaked.Wiki API</a></h1>
 
 </body>
-
-<script>
-
-    $.getJSON('https://api.leaked.wiki/discorduser?id=1107126931226374284',
-
-    function(data) {
-
-        document.getElementById("avatar").src = data.avatar;
-        document.getElementById("username").innerHTML = "@" + data.username
-
-    })
-
-</script>
 
 </html>
